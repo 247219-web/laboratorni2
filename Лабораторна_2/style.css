@@ -1,0 +1,122 @@
+
+:root {
+    --bg-light: #FDF3F6;   
+    --pink-main: #F8C6D8;    
+    --pink-accent: #F48FB1; 
+    --pink-dark: #C2185B;    
+    --text-main: #333;       
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--pink-main);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.product {
+    background: #fff;
+    border-radius: 20px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+}
+
+.product img {
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: var(--pink-dark);
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--pink-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: var(--pink-dark);
+}
+
+footer {
+    background-color: var(--pink-main);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
